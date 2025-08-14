@@ -1,0 +1,135 @@
+@font-face {
+  font-family: 'Prompt-Bold';
+  src: url('./asset/fonts/Prompt/Prompt-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Prompt-Light';
+  src: url('./asset/fonts/Prompt/Prompt-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Prompt-Medium';
+  src: url('./asset/fonts/Prompt/Prompt-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Prompt-Regular';
+  src: url('./asset/fonts/Prompt/Prompt-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Itim-Regular';
+  src: url('./asset/fonts/itim/Itim-Regular.ttf') format('truetype');
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 10s linear infinite;
+  padding-right: 100 px;
+}
+
+/* Custom Calendar Styles */
+.custom-calendar {
+  background-color: #FFF;
+  /* width: 300px; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 159px;
+}
+
+.custom-calendar .react-calendar__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Itim-Regular';
+  font-size: 20px;
+}
+
+.custom-calendar .react-calendar__navigation button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-family: 'Itim-Regular';
+  font-size: 25px;
+  margin-bottom: 27px;
+}
+
+.custom-calendar .react-calendar__navigation button:disabled {
+  opacity: 0.5;
+}
+
+.custom-calendar .react-calendar__month-view__weekdays {
+  font-family: 'Itim-Regular';
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  /* วัน */
+}
+
+.custom-calendar .react-calendar__tile--now {
+  font-family: 'Itim-Regular';
+  font-size: 16px;
+}
+
+.custom-calendar .react-calendar__month-view__days__day--weekend {
+  font-family: 'Itim-Regular';
+  font-size: 16px;
+}
+
+.custom-calendar .react-calendar__tile--active.react-calendar__tile--now {
+  font-family: 'Itim-Regular';
+  font-size: 16px;
+}
+
+.custom-calendar .react-calendar__month-view__days__day {
+  background-color: #FFF;
+  font-family: 'Itim-Regular';
+  font-size: 16px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.custom-calendar .react-calendar__tile {
+  border: none;
+}
+
+.custom-calendar .react-calendar__month-view__weekdays__weekday {
+  flex: 1;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.custom-calendar .react-calendar__month-view__days__day--neighboringMonth {
+  visibility: hidden;
+}
+
+.check-in-date {
+  color: blue;
+  font-family: 'Itim-Regular';
+  font-size: 16px;
+}
+
+.check-out-date {
+  color: red;
+  font-family: 'Itim-Regular';
+  font-size: 16px;
+}
+
+.check-in-out {
+  color: #40A578;
+  font-family: 'Itim-Regular';
+  font-size: 18px;
+}
